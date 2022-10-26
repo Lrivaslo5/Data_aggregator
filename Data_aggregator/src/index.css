@@ -3,16 +3,9 @@
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
+  background-color: rgb(252, 240, 227);
 
-  color-scheme: dark;
-  color: rgb(255, 255, 255);
-  background-color: #868686;
-
-
-  color-scheme: light;
-  color: rgba(59, 59, 59, 0.87);
-  background-color: #FFF8ED;
-
+  
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;

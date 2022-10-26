@@ -1,19 +1,24 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import Navbar from './components/Navbar'
+import NavBar from './components/NavBar'
+import UserConfig from './components/UserConfigCard'
+
 import './App.css'
 
-function App() {
-  const [count, setCount] = useState(0)
 
+
+function App() {
+  let [mode, setMode] = useState("light");
+  function handleClick(){
+    setMode(mode == "light" ? "dark" : "light");
+  }
   return (
-    <div>
+    <div className={'App ' + mode}>      
       {/* Navigation Bar */}
-      <Navbar></Navbar>
-      <div className="App">
+      <NavBar></NavBar>
+      <UserConfig></UserConfig>
           <div className="card">
-              <button onClick={() => setCount((count) => count + 1)}>
-                count is {count}
+              <button onClick={handleClick}>
+                toggle
               </button>
               <p>
                 Edit <code>src/App.jsx</code> and save to test HMR
@@ -22,20 +27,6 @@ function App() {
                 Click on the Vite and React logos to learn more
               </p>
           </div>          
-        </div>
-
-        <div className="card">
-          <button onClick={() => setCount((count) => count + 1)}>
-            count is {count}
-          </button>
-          <p>
-            Edit <code>src/App.jsx</code> and save to test HMR
-          </p>
-          <p className="read-the-docs">
-            Click on the Vite and React logos to learn more
-          </p>
-      </div>
-      
     </div>
   )
 }

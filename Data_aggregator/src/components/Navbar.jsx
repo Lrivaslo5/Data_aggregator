@@ -1,9 +1,9 @@
-import './Navbar.css'
+import './NavBar.css'
 import Search from './Search.jsx'
 import Darkmode from './Darkmode.jsx'
-import Profileicon from './Profileicon.jsx'
+import Profileicon from './ProfileIcon.jsx'
 
-function Navbar() {
+function NavBar() {
     return (
       <div className = "bar">
         <div className="bar-start">
@@ -13,7 +13,7 @@ function Navbar() {
         <div className="bar-end">
           <Search></Search>
           <Darkmode></Darkmode>
-          <img id='notify' src="/src/assets/NotficationIcon.svg"/>
+          <img id='notify' src={`/src/assets/NotficationIcon.svg`}/>
           <img id='setting' src="/src/assets/setting.svg"/>
           <Profileicon></Profileicon>
         </div>
@@ -22,5 +22,5 @@ function Navbar() {
 }
 
 
-export default Navbar
+export default NavBar
   

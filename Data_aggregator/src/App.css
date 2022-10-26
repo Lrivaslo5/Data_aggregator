@@ -1,9 +1,26 @@
 #root {
   max-width: 100%;
   margin: 0 auto;
-  /* padding: 2rem; */
   text-align: center;
 }
+/* 
+.app{
+  transition-property: background-color;
+  transition-duration: 10s;
+  transition-timing-function: linear;
+}
+
+.light {
+  color: rgb(238, 0, 0);
+  background-color: #868686;
+
+}
+
+.dark {
+  color: rgba(59, 59, 59, 0.87);
+  background-color: #FFF8ED;
+} */
+
 
 .logo {
   height: 6em;
@@ -15,15 +32,6 @@
 }
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
 
 @media (prefers-reduced-motion: no-preference) {
