@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import NavBar from './components/NavBar'
-import UserConfig from './components/UserConfigCard'
 
 import './App.css'
 
@@ -15,7 +14,6 @@ function App() {
     <div className={'App ' + mode}>      
       {/* Navigation Bar */}
       <NavBar></NavBar>
-      <UserConfig></UserConfig>
           <div className="card">
               <button onClick={handleClick}>
                 toggle

@@ -1,11 +1,22 @@
 import './UserConfig.css'
-import '../App.css'
 
-function UserConfig() {
+function UserConfig(props) {
     return (
-      <div id = "user-config">
-        <p>rest</p>
-        <button id = "toggle">toggle</button>
+      <div id = "user-config-card">
+        <div id = "config-title">
+            <img id='logo-title' src="/src/assets/Logo.svg"/>
+            <div>Data Aggregator</div>
+            <button onClick ={() => {console.log(props)}}id = "toggle">^</button>
+        </div>
+        <div id = 'config-content'>
+            <div id = "profile-icon"></div>
+            <ul id = "config-list">
+                <li id = "list-title">Luis Rivas Lopez</li>
+                <li>lrivaslo@terpmail.umd.edu</li>
+                <li><a href=''>Account Configuration</a></li>
+                <li><a href=''>Sign Out</a></li>
+            </ul>
+        </div>
       </div>
     )
 }
