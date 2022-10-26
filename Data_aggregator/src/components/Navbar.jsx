@@ -1,3 +1,4 @@
+import { useState } from 'react'
 
 import './NavBar.css'
 
@@ -8,22 +9,28 @@ import Profileicon from './ProfileIcon.jsx'
 
 
 function NavBar() {
+  
+  const [Notification, setNotification] = useState('')
 
-    return (
-      <div className = "bar">
-        <div className="bar-start">
-          <img id='logo' src="/src/assets/Logo.svg"/>
-          <div>Data Aggregator</div>
-        </div>
-        <div className="bar-end">
-          <Search></Search>
-          <Darkmode></Darkmode>
-          <img id='notify' src={`/src/assets/NotficationIcon.svg`}/>
-          <img id='setting' src="/src/assets/setting.svg"/>
-          <Profileicon></Profileicon>
-        </div>
+
+  return (
+    <div className = "bar">
+      <div className="bar-start">
+        <img id='logo' src="/src/assets/Logo.svg"/>
+        <div>Data Aggregator</div>
       </div>
-    )
+      <div className="bar-end">
+        <Search></Search>
+        <Darkmode></Darkmode>
+        <div onClick 
+        >
+          <img id='notify' src={`/src/assets/NotficationIcon${Notification}.svg`}/>
+        </div>
+        <img id='setting' src="/src/assets/setting.svg"/>
+        <Profileicon></Profileicon>
+      </div>
+    </div>
+  )
 }
 
 
