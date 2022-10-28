@@ -6,7 +6,7 @@ function UserConfig(props) {
         <div id = "config-title">
             <img id='logo-title' src="/src/assets/Logo.svg"/>
             <div>Data Aggregator</div>
-            <button onClick ={() => {console.log(props)}}id = "toggle">^</button>
+            <button onClick ={() => {props.toggleConfig()}}id = "toggle">^</button>
         </div>
         <div id = 'config-content'>
             <div id = "profile-icon"></div>
