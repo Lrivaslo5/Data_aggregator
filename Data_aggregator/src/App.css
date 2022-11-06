@@ -50,3 +50,93 @@
 .read-the-docs {
   color: #888;
 }
+
+.card h3{
+  text-align: left;
+}
+
+/* Account Overview Styling */
+
+#dash-cont{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1.25rem;
+}
+#dash-cont img{
+  width: 33%;
+  border-radius: 10px;
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
+}
+/* Batch List */
+#batch-list ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 0.5rem;
+}
+#batch-list ul li{
+  list-style: none;
+  font-weight:600;
+}
+#item{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 0.5rem;
+  background-color: lightsteelblue;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+#batch{
+  margin-left: -2rem;
+  padding: 0;
+  margin-top: 0.6rem;
+}
+#import-widget{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#import-widget p{
+  font-size: small;
+}
+#progress-bar{
+  height: 0.5rem;
+  width: 4rem;
+  background-color: aquamarine;
+  margin-left: 0.6rem;
+}
+#imported {
+  display: flex;
+  flex-direction: column;
+  margin-left: -2.4rem;
+  align-items: flex-start;
+}
+#imported h4{
+  margin-bottom: -0.25rem;
+}
+#status{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: aqua;
+  width: 11rem;
+  margin-right: 2rem;
+}
+#status-message{
+  height: 2rem;
+  width: 4rem;
+  text-align: center  ;
+  background-color: azure;
+
+}
+#errors{
+  height: 2rem;
+  width: 4rem;  
+  text-align: left;
+  margin-left: 0.25rem;
+}
