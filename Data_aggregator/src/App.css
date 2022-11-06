@@ -2,7 +2,9 @@
   max-width: 100%;
   margin: 0 auto;
   text-align: center;
+  font-family: 'DM Sans', sans-serif;
 }
+
 /* 
 .app{
   transition-property: background-color;
@@ -123,7 +125,7 @@
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  background-color: aqua;
+  /* background-color: aqua; */
   width: 11rem;
   margin-right: 2rem;
 }
