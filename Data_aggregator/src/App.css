@@ -47,6 +47,8 @@
   background-color: #FFFFFF;
   margin: 2rem;
   border-radius: 25px;
+  box-shadow: 5px 2px 5px lightgray;
+
 }
 
 .read-the-docs {
@@ -55,6 +57,12 @@
 
 .card h3{
   text-align: left;
+}
+
+.card-section {
+  background-color: #F0F0F0;
+  border-bottom: solid 1px grey ;
+  border-top: solid 1px grey ;
 }
 
 /* Account Overview Styling */
@@ -72,6 +80,12 @@
   margin-right: 0.25rem;
 }
 /* Batch List */
+
+#batch-title {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
 #batch-list ul{
   display: flex;
   flex-direction: row;
@@ -87,9 +101,10 @@
   flex-direction: row;
   justify-content: space-around;
   padding: 0.5rem;
-  background-color: lightsteelblue;
   margin-left: 0.5rem;
   margin-right: 0.5rem;
+  background-color: #ffffff;
+
 }
 #batch{
   margin-left: -2rem;
@@ -134,7 +149,6 @@
   width: 4rem;
   text-align: center  ;
   background-color: azure;
-
 }
 #errors{
   height: 2rem;
