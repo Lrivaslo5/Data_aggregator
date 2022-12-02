@@ -1,10 +1,12 @@
 import { useState } from 'react'
+
+// React Components
 import NavBar from './components/NavBar'
 import BatchItem from './components/BatchItem'
 
-
+// Styling 
 import './App.css'
-
+import './components/BatchItem.css'
 
 
 function App() {
@@ -31,9 +33,10 @@ function App() {
         {/* <button onClick={handleClick}>
           toggle
         </button> */}
+        {/* Turn batch Title into card title for reusabilty*/}
         <h3 id = "batch-title">Batch List</h3>
         <div className="card-section">
-        <div id= "batch-list">
+        <div id= "batch-list"> 
           <ul>
             <li>Batch ID</li>
             <li>Imported</li>
@@ -42,6 +45,7 @@ function App() {
             <li>Source</li>
             <li>Ran On</li>
           </ul>
+          <BatchItem></BatchItem>
           <BatchItem></BatchItem>
         </div>
 

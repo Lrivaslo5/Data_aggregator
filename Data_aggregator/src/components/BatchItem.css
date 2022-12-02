@@ -1,0 +1,106 @@
+/* Batch List */
+
+
+.item__checkbox{
+  background-color: aqua;
+  margin-left: -4.5rem;
+}
+
+.item__col4{
+  background-color: aqua;
+}
+
+.item__col5{
+  background-color: aqua;
+}
+
+.item__col6{
+  background-color: aqua;
+}
+
+
+
+#batch-title {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  background-color: red;
+}
+
+#batch-list ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 0.5rem;
+}
+#batch-list ul li{
+  list-style: none;
+  font-weight:600;
+}
+#item{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 0.5rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  background-color: #ffffff;
+  border-radius: 10px;
+
+}
+#batch{
+  margin-left: -2rem;
+  padding: 0;
+  margin-top: 0.6rem;
+  background-color: aqua;
+
+}
+#import-widget{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#import-widget p{
+  font-size: small;
+}
+#progress-bar{
+  height: 0.5rem;
+  width: 4rem;
+  background-color: aquamarine;
+  margin-left: 0.6rem;
+}
+#imported {
+  display: flex;
+  flex-direction: column;
+  margin-left: -2.4rem;
+  align-items: flex-start;
+  background-color: aqua;
+
+}
+#imported h4{
+  margin-bottom: -0.25rem;
+}
+#status{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: aqua;
+  width: 11rem;
+  margin-right: 2rem;
+}
+#status-message{
+  height: 2rem;
+  width: 4rem;
+  text-align: center  ;
+  background-color: azure;
+}
+#errors{
+  height: 2rem;
+  width: 5rem;  
+  text-align: left;
+  margin-left: 0.25rem;
+  
+}

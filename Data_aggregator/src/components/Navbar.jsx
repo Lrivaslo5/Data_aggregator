@@ -1,6 +1,6 @@
 import { useState } from 'react'
-
 import './NavBar.css'
+
 
 
 import Search from './Search.jsx'
