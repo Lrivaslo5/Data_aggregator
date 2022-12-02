@@ -15,15 +15,14 @@ function NavBar() {
 
   return (
     <div className = "bar">
-      <div className="bar-start">
+      <div className="bar__start">
         <img id='logo' src="/src/assets/Logo.svg"/>
         <div>Data Aggregator</div>
       </div>
-      <div className="bar-end">
+      <div className="bar__end">
         <Search></Search>
         <Darkmode></Darkmode>
-        <div onClick 
-        >
+        <div onClick>
           <img id='notify' src={`/src/assets/NotficationIcon${Notification}.svg`}/>
         </div>
         <img id='setting' src="/src/assets/setting.svg"/>

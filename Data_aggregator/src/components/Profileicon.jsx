@@ -13,7 +13,7 @@ function Profileicon() {
   };
   
   return (
-    <div className = "profile-icon">
+    <div className = "bar__profile">
       <img  onClick = {handleConfig} id = "profile-image" src="/src/assets/profile.svg"/>
       {configCard && <UserConfig configCard ={configCard} toggleConfig = {handleConfig}></UserConfig>}
     </div>

@@ -12,14 +12,14 @@
     height: 4.25rem;
     box-shadow: 5px 2px 5px lightgray;
 }
-.bar-start{
+.bar__start{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 
-.bar-end{
+.bar__end{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -27,7 +27,7 @@
 }
 
 
-.search-bar {
+.bar__searchbar {
     width: 10rem;
     height: 2rem;
     background-color: #E0E0E0;
@@ -37,12 +37,12 @@
     align-items: center;
 }
 
-.search-bar *{
+.bar__searchbar *{
     margin-left: 0.8rem;
     font-size: 0.9rem;
 }
 
-.profile-icon {
+.bar__profile {
     height: 40px;
     width: 40px;
     background-color: #bbb;
