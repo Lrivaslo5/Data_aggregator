@@ -3,6 +3,7 @@ import { useState } from 'react'
 // React Components
 import NavBar from './components/NavBar'
 import BatchItem from './components/BatchItem'
+import BatchListCard from './components/BatchListCard'
 
 // Styling 
 import './App.css'
@@ -10,7 +11,8 @@ import './components/BatchItem.css'
 
 // Dummy Objects
 import testData from './assets/testdata.json'
-
+import testprops from './assets/testprops.json'
+const testoption = 'main'
 
 
 const options = {
@@ -58,21 +60,14 @@ function App() {
         {/* <button onClick={testJson}>
           toggle
         </button> */}
-        {/* Turn batch Title into card title for reusabilty*/}
+        {/* Turn batch Title into card title for reusabilty, title being a prop*/}
         <h3 id = "batch-title">Batch List</h3>
         <div className="card-section">
-        <div id= "batch-list"> 
-          <ul>
-            <li>Batch ID</li>
-            <li>Imported</li>
-            <li>Status</li>
-            <li>Success/Error/Saved</li>
-            <li>Source</li>
-            <li>Ran On</li>
-          </ul>
+          <BatchListCard props = {testprops} option = {testoption}></BatchListCard>
+          
+          {/* Determine how to populate items? */}
           <BatchItem></BatchItem>
           <BatchItem></BatchItem>
-        </div>
         </div>
       </div>         
     </div>

@@ -1,6 +1,4 @@
-[
-
-    {
-        "Titles": ["Batch Id", "Imported", "Status", "Success[Error]", "Source", "Ran On"]
-    }
-  ]
+{
+"main": ["Batch Id", "Imported", "Status", "Success[Error]", "Source", "Ran On"],
+"detail": ["First Name", "Last Name", "Email", "Status", "Ran on", "SF ID"]
+}

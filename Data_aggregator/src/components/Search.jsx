@@ -5,7 +5,7 @@ function Search() {
     return (
       <div className="bar__searchbar">
         <img src="/src/assets/search.png"/>
-        <p>testing</p>
+        <p>Search by ID, E-Mail, Name</p>
       </div>
     )
 }
