@@ -29,12 +29,20 @@
 
 .bar__searchbar {
     width: 10rem;
-    height: 2rem;
-    background-color: yellow;
+    height: 1.75rem;
+    padding-left: 2rem;
+
+    background: url(/src/assets/search.png) no-repeat scroll 0.438rem 0.48rem;
+    background-color: red;
+  
+    outline:#bbb;
+    border-style: solid;
     border-radius: 0.5rem;
+
     display: flex;
     flex-direction: row;
     align-items: center;
+
 }
 
 .bar__searchbar *{
