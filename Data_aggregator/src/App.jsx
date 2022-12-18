@@ -2,7 +2,7 @@ import { useState } from 'react'
 
 // React Components
 import NavBar from './components/NavBar'
-import BatchItem from './components/BatchItem'
+import Item from './components/Item'
 import BatchListCard from './components/BatchListCard'
 
 // Styling 
@@ -10,8 +10,9 @@ import './App.css'
 import './components/BatchItem.css'
 
 // Dummy Objects
-import testData from './assets/testdata.json'
 import testprops from './assets/testprops.json'
+import testbatch from './assets/testbatch.json'
+
 const testoption = 'main'
 
 
@@ -65,9 +66,8 @@ function App() {
         <div className="card-section">
           <BatchListCard props = {testprops} option = {testoption}></BatchListCard>
           
-          {/* Determine how to populate items? */}
-          <BatchItem></BatchItem>
-          <BatchItem></BatchItem>
+          {/* Determine how to populate x items / out of y? */}
+          <Item props = {testbatch} option = {testoption}></Item>
         </div>
       </div>         
     </div>

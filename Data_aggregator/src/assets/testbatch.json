@@ -1,0 +1,11 @@
+{
+    "batchID":"#32132230",
+    "status":{
+        "current": "Done",
+        "successes":100,
+        "errors": 100,
+        "items":250
+    },
+    "ranOn":"11/20/22",
+    "source":"SF"
+}
