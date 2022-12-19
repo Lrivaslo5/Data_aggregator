@@ -68,6 +68,10 @@ function App() {
           
           {/* Determine how to populate x items / out of y? */}
           <Item props = {testbatch} option = {testoption}></Item>
+          <Item props = {testbatch} option = {testoption}></Item>
+          <Item props = {testbatch} option = {testoption}></Item>
+
+
         </div>
       </div>         
     </div>

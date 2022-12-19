@@ -4,12 +4,13 @@
 function BatchListCard({props , option}) {
     const titles =  props[option]
     var titleList = titles.map(function(title){
-        return<li>{title}</li>
+        var numbered = "title" + titles.indexOf(title); 
+        return<li className= {numbered}>{title}</li>
     })
     
     return ( 
     <div id= "batch-list">
-        <ul>
+        <ul className="titleparent">
             {/* <button onClick={() => (alert(titles))}>test</button> */}
             {titleList}
         </ul>
